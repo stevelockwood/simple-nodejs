@@ -1,0 +1,15 @@
+{
+  "name": "nodejs-steve-hello-world",
+  "description": "Simple Hello World",
+  "version": "0.0.1",
+  "private": true,
+  "license": "Apache-2.0",
+  "author": "Steve",
+  "engines": {
+    "node": "18.*.*"
+  },
+  "scripts": {
+    "start": "node app.js"
+  }
+}
+

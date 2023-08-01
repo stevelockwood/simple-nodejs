@@ -1,0 +1,18 @@
+Artifact Registry
+
+the tag starts with region-docker.pkg.dev
+
+gcloud builds submit --tag us-central1-docker.pkg.dev/GCP_PROJECT-NAME/demoreg/space-invaders-m4:v2 .
+
+
+Container Registry
+gcloud builds submit --tag gcr.io/GCP_PROJECT-NAME/demo-image:v2 .
+
+The Cloudbuild.yaml file is to use if creating a cloud build trigger - it is not used for a simple command like build
+
+If creating a cloud builder trigger:
+	Event: Push new tag
+	Tag: v1.*
+	Build configuration: /cloudbuild.yaml
+
+
